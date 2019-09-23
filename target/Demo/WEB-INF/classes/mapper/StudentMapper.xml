@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="AS.Demo.dao.StudentMapper">
+    <insert id="AddStudent" parameterType="AS.Demo.po.Student">
+        INSERT INTO student VALUES(#{student_id},#{student_password},#{student_name},#{student_sex},#{student_phone})
+    </insert>
+    <select id="SelectStudent" parameterType="AS.Demo.po.Student" resultType="AS.Demo.po.Student">
+        SELECT * FROM student WHERE student_id=#{student_id} AND student_password=#{student_password}
+    </select>
+    <select id="SelectByStudentId" resultType="AS.Demo.po.Student">
+        SELECT * FROM student WHERE student_id=#{student_id}
+    </select>
+</mapper>

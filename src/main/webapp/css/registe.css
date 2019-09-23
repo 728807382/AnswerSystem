@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #6d6d6d, #5b5b5b);
+}
+
+.div_all {
+    width: 800px;
+    height: 500px;
+    position: relative;
+    left: 350px;
+    top: 100px;
+}
+
+.div_a1 {
+    width: 400px;
+    height: 500px;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    background: linear-gradient(45deg, #151515, #bebebe);
+    float: left;
+}
+
+.div_a2 {
+    width: 400px;
+    height: 500px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    background: #414141;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.detail {
+    width: 70%;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    left: 100px;
+    top: 50px;
+}
+
+.log_text {
+    margin-top: 35px;
+    margin-bottom: 10px;
+    font-size: 50px;
+    background: none;
+    font-size: 20px;
+    color: #fff;
+}
+
+.CoolPy_text {
+    font-size: 30px;
+    position: relative;
+    color: #bebebe;
+    top: 150px;
+    text-align: center;
+}
+
+.img_1 {
+    width: 201px;
+    height: 201px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.input {
+    margin-top: 10px;
+    width: 100%;
+    font-size: 18px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 18px;
+    font-family: "neo";
+}
+
+.button {
+    width: 145px;
+    height: 40px;
+    border: 1px solid #fff;
+    background: none;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+
+.log_btn:hover, .reg_btn:hover {
+    background: rgba(255, 255, 255, .25);
+}
+
+.teacher, .student {
+    color: #e7e7e7;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    position: relative;
+    left: 1150px;
+    bottom: 350px;
+}
+
+.student {
+    background-color: #a9a9a9;
+}
+
+.teacher {
+    background-color: #464646;
+}

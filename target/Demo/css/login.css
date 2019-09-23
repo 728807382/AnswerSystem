@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 1200px;
+    height: 900px;
+    background: linear-gradient(45deg, #6d6d6d, #5b5b5b);
+}
+
+.div_all {
+    width: 800px;
+    height: 500px;
+    position: relative;
+    left: 350px;
+    top: 100px;
+}
+
+.div_a1 {
+    width: 400px;
+    height: 500px;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    background: linear-gradient(45deg, #151515, #bebebe);
+    float: left;
+}
+
+.div_a2 {
+    width: 400px;
+    height: 500px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    background: #414141;
+    float: right;
+}
+
+.div_a2_b1 {
+    position: relative;
+    left: 55px;
+    top: 70px;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    left: 100px;
+    top: 50px;
+}
+
+.CoolPy_text {
+    font-size: 30px;
+    position: relative;
+    color: #bebebe;
+    top: 150px;
+    text-align: center;
+}
+
+.img_1 {
+    width: 201px;
+    height: 201px;
+}
+
+.log_btn, .reg_btn {
+    position: relative;
+    left: 8px;
+    width: 145px;
+    height: 40px;
+    border: 1px solid #fff;
+    background: none;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+.log_btn:hover, .reg_btn:hover {
+    background: rgba(255, 255, 255, .25);
+}
+
+.log_text {
+    margin-bottom: 25px;
+    position: relative;
+    left: 120px;
+    font-size: 50px;
+    background: none;
+    font-size: 20px;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    margin-top: 35px;
+    font-size: 18px;
+}
+
+input:focus {
+    outline: none;
+}
+
+#id, #password {
+    margin: 10px;
+    width: 290px;
+    height: 30px;
+    font-size: 18px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 18px;
+    font-family: "neo";
+}
+
+.selectAll {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.select1, .select2 {
+    color: #fff;
+    font-size: 18px;
+}
+
+.select1 {
+    margin-left: 40px;
+}
+
+.select2 {
+    margin-left: 110px;
+}

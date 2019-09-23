@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="AS.Demo.dao.Stu_TeaMapper">
+    <insert id="AddContact" >
+        INSERT INTO stu_tea VALUES(#{student_id},#{teacher_id})
+    </insert>
+    <select id="SelectByteacherId" resultType="AS.Demo.po.Stu_Tea">
+        select * from stu_tea where teacher_id=#{teacher_id}
+    </select>
+
+    <delete id="DeleteContact">
+        delete from stu_tea where student_id=#{student_id} and teacher_id=#{teacher_id}
+    </delete>
+</mapper>

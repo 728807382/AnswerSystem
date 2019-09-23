@@ -1,0 +1,56 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>注册页面</title>
+    <link rel="stylesheet" type="text/css" href="../css/registe.css">
+    <script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#student").click(function () {
+                if ($("#student").css("background-color") == "rgb(70, 70, 70)") {
+                    $("#student").css("background-color", "rgb(169, 169, 169)");
+                    $("#teacher").css("background-color", "rgb(70, 70, 70)");
+                    $("#jobtitle").slideUp("slow");
+                    // $("#jobtitle").remove();
+                }
+            });
+            $("#teacher").click(function () {
+                if ($("#teacher").css("background-color") == "rgb(70, 70, 70)") {
+                    $("#teacher").css("background-color", "rgb(169, 169, 169)");
+                    $("#student").css("background-color", "rgb(70, 70, 70)");
+                    $("#jobtitle").slideDown("slow");
+                    // $("#phone").after("<input type='text' class='input' id='jobtitle' name='jobtitle' placeholder='职称'>");
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="div_all">
+    <!-- 左框样式 -->
+    <div class="div_a1">
+        <div class="circle"><img src="../img/a.jpg" class="img_1"/></div>
+        <p class="CoolPy_text"><b>Registration</b></p>
+    </div>
+    <!-- 右框注册信息填写 -->
+    <div class="div_a2">
+        <div class="log_text">注册</div>
+        <div class="detail">
+            <form action="/AnswerSystem_war_exploded/register.action" method="GET">
+                <input type="text" class="input" name="id" placeholder="用户ID">
+                <input type="password" class="input" name="password" placeholder="登陆密码">
+                <input type="text" class="input" name="name" placeholder="姓名">
+                <input type="text" class="input" name="sex" placeholder="性别">
+                <input type="text" class="input" class="phone" id="phone" name="phone" placeholder="电话号码">
+                <input type="text" class="input" id="jobtitle" name="jobtitle" placeholder="职称" style="display: none;">
+                <input type="submit" id="button" class="button" value="确认">
+            </form>
+        </div>
+    </div>
+</div>
+<div class="select">
+    <div id="student" class="student">学生</div>
+    <div id="teacher" class="teacher">教师</div>
+</div>
+</body>
+</html>

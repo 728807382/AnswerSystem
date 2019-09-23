@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    <mapper namespace="AS.Demo.dao.QuestionMapper">
+
+    <insert id="AddQuestion" parameterType="AS.Demo.po.Question">
+         INSERT INTO question VALUES(#{question_id},#{question_poid},#{question_title},#{question_des},#{question_time},#{answer_poid},#{answer_time},#{answer_des})
+    </insert>
+    <select id="SelectByQuestionTitle" resultType="AS.Demo.po.Question">
+        SELECT *  FROM question WHERE question_title LIKE #{question_title}
+    </select>
+<select id="SelectAllQuestion" resultType="AS.Demo.po.Question">
+        SELECT * FROM question
+    </select>
+
+<!--    按照问题Id查找问题-->
+    <select id="SelectByQuestionId" parameterType="String" resultType="AS.Demo.po.Question">
+        SELECT * FROM question where question_id=#{question_id}
+    </select>
+ <!--    按照本人id查找本人发布的所有问题-->
+    <select id="SelectByPoId" parameterType="AS.Demo.po.Question" resultType="AS.Demo.po.Question">
+        SELECT * FROM question where question_poid=#{question_poid}
+    </select>
+<!--    答疑更新问题-->
+    <select id="UpdateByQuestionId">
+        UPDATE question SET answer_des=#{answer_des},answer_poid=#{teacher_id},answer_time=#{question_time} WHERE question_id=#{question_id}
+    </select>
+
+    <delete id="DeleteQuestion" parameterType="String">
+        DELETE FROM question WHERE question_id=#{question_id}
+    </delete>
+</mapper>

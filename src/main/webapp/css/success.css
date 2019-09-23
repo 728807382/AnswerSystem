@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #6d6d6d, #5b5b5b);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.div_a1 {
+    width: 400px;
+    height: 500px;
+    border-radius: 25px;
+    background: linear-gradient(45deg, #151515, #bebebe);
+    float: left;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    left: 100px;
+    top: 50px;
+}
+
+.CoolPy_text {
+    font-size: 30px;
+    position: relative;
+    color: #bebebe;
+    top: 150px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.img_1 {
+    width: 201px;
+    height: 201px;
+}
+
+.text {
+    position: relative;
+    left: 50px;
+}

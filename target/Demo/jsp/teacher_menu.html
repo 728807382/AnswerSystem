@@ -1,0 +1,41 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>教师操作页面</title>
+    <link rel="stylesheet" type="text/css" href="../css/student_menu.css">
+</head>
+<body>
+<div class="main">
+    <!-- 菜单框 -->
+    <div class="menu">
+        <div class="img"><img class="img_src" src="../img/a.jpg"/></div>
+        <div class="title">Online Q & A</div>
+        <div>
+            <a href="/AnswerSystem_war_exploded/jsp/teacher_answerquiz.jsp" target="myiframe">
+                <input class="button" type="button" value="问题答疑">
+            </a>
+        </div>
+
+        <div>
+            <a href="/AnswerSystem_war_exploded/jsp/teacher_manage.html" target="myiframe">
+                <input class="button" type="button" name="quiz" id="quiz" value="问题管理">
+            </a>
+        </div>
+        <div>
+            <a href="/AnswerSystem_war_exploded/jsp/teacher_stumanage.html" target="myiframe">
+                <input class="button" type="button" name="my_question" id="my_question" value="学生管理">
+            </a>
+        </div>
+        <div>
+            <a href="/AnswerSystem_war_exploded/jsp/tearcher_info.html" target="myiframe">
+                <input class="button" type="button" name="my" id="my" value="个人信息">
+            </a>
+        </div>
+    </div>
+
+    <!-- 操作框 -->
+    <div class="operate">
+        <iframe class="frame" name="myiframe">
+    </div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    color: #fff;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: #414141;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+/*添加学生模块*/
+.add_student, .show_student {
+    height: 20%;
+    width: 100%;
+    /*background-color: pink;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add_student div {
+    margin-top: 20px;
+}
+
+.add_student {
+    border-bottom: 1px solid #a9a9a9;
+}
+
+/*展示商品模块*/
+.show_student {
+    height: 80%;
+    width: 100%;
+    /*background-color: skyblue;*/
+}
+
+.show_student div {
+    margin-top: 20px;
+}
+
+tr td {
+    font-size: 20px;
+}
+
+table, td, tr {
+    width: 800px;
+    border: 1px solid #fff;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: center;
+}
+
+
+input:focus {
+    outline: none;
+}
+
+.input {
+    font-size: 18px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 18px;
+}
+
+.button {
+    width: 145px;
+    height: 40px;
+    border: 1px solid #fff;
+    background: none;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: rgba(255, 255, 255, .25);
+}
